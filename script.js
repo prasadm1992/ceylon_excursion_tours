@@ -335,6 +335,7 @@ function lbNav(dir) {
 function openModal(tourId) {
   const t = TOURS[tourId];
   if (!t) return;
+  const overlay = document.getElementById("modal-overlay");
   const m = document.getElementById("tour-modal");
   document.getElementById("modal-img").src = t.image;
   document.getElementById("modal-grad").style.background =
@@ -383,10 +384,10 @@ function openModal(tourId) {
     updateBookUI();
   };
 
-  m.classList.add("open");
+  overlay.classList.add("open");
 }
 function closeModal() {
-  document.getElementById("tour-modal").classList.remove("open");
+  document.getElementById("modal-overlay").classList.remove("open");
 }
 
 // ---- Booking Page ----
