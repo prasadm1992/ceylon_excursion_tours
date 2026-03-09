@@ -384,6 +384,7 @@ function openModal(tourId) {
     updateBookUI();
   };
 
+  // Show overlay (CSS toggles visibility on .modal-overlay.open)
   overlay.classList.add("open");
 }
 function closeModal() {
@@ -548,4 +549,14 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("modal-close").addEventListener("click", closeModal);
   // Ensure WhatsApp links include the default template when the page loads
   updateWhatsappLinks();
+
+  // Add event delegation as a fallback so 'View Details' works even if
+  // individual listeners weren't attached (covers dynamic content or timing issues).
+  document.addEventListener("click", (e) => {
+    const btn = e.target.closest("[data-tour-detail]");
+    if (btn) {
+      const id = btn.dataset.tourDetail;
+      if (id) openModal(id);
+    }
+  });
 });
