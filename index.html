@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ceylon Excursion Tours — Day Tours from Colombo, Sri Lanka</title>
+    <meta
+      name="description"
+      content="Explore Sri Lanka's iconic destinations with fully guided day tours from Colombo. Visit Galle Fort, Kandy Temple of the Tooth, and Sigiriya Rock Fortress. All-inclusive tours for just $30."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'><circle cx='30' cy='30' r='28' fill='%230E7C5F'/><path d='M15 38 Q30 10 45 38' stroke='%23F9C846' stroke-width='3' fill='none'/><circle cx='30' cy='22' r='3' fill='%23F9C846'/></svg>"
+    />
+  </head>
+  <body>
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav class="nav" id="main-nav">
+      <div class="nav-inner">
+        <div class="nav-logo" id="logo-btn">
+          <svg width="36" height="36" viewBox="0 0 60 60" fill="none">
+            <circle cx="30" cy="30" r="28" fill="#0E7C5F" />
+            <path
+              d="M15 38 Q30 10 45 38"
+              stroke="#F9C846"
+              stroke-width="3"
+              fill="none"
+              stroke-linecap="round"
+            />
+            <path
+              d="M20 36 Q30 18 40 36"
+              stroke="#fff"
+              stroke-width="2"
+              fill="none"
+              stroke-linecap="round"
+            />
+            <circle cx="30" cy="22" r="3" fill="#F9C846" />
+            <path d="M25 42 L30 35 L35 42" fill="#F9C846" />
+            <path
+              d="M12 44 Q30 50 48 44"
+              stroke="#fff"
+              stroke-width="1.5"
+              fill="none"
+              stroke-linecap="round"
+            />
+          </svg>
+          <div>
+            <div class="nav-logo-text">Ceylon Excursion</div>
+            <div class="nav-logo-sub">Tours</div>
+          </div>
+        </div>
+        <div class="nav-links">
+          <button class="nav-link active" id="nav-home">Home</button>
+          <button class="nav-link" id="nav-faq">FAQ</button>
+          <button class="nav-link" id="nav-book">Book Now</button>
+          <a href="tel:0716966245" class="nav-phone">📞 0716966245</a>
+        </div>
+        <button class="nav-burger" id="burger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="nav-mobile" id="mobile-menu">
+        <button id="nav-home-m" class="active-mobile">Home</button>
+        <button id="nav-faq-m">FAQ</button>
+        <button id="nav-book-m">Book Now</button>
+        <a href="tel:0716966245">📞 0716966245</a>
+      </div>
+    </nav>
+
+    <!-- ==================== HOME PAGE ==================== -->
+    <div id="page-home">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <div class="hero-tag">Discover the Pearl of the Indian Ocean</div>
+          <h1>Unforgettable<br /><span>Day Tours</span> from Colombo</h1>
+          <p>
+            Explore Sri Lanka's most iconic destinations in a single day. Fully
+            guided tours with breakfast, lunch, tickets &amp; AC transport — all
+            for just <strong>$30</strong> per person.
+          </p>
+          <div class="hero-btns">
+            <button class="btn-gold" id="hero-book-btn">Book Your Tour</button>
+            <a
+              href="https://wa.me/94716966245"
+              target="_blank"
+              class="btn-outline"
+              >💬 WhatsApp Us</a
+            >
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="rgba(255,255,255,.5)"
+            stroke-width="2"
+          >
+            <path d="M12 5v14M5 12l7 7 7-7" />
+          </svg>
+        </div>
+      </section>
+
+      <!-- All Inclusive Banner -->
+      <section class="includes">
+        <div class="includes-inner">
+          <div class="includes-label">All Inclusive</div>
+          <div class="includes-item">
+            <span class="icon">🍳</span> Breakfast
+          </div>
+          <div class="includes-item"><span class="icon">🍛</span> Lunch</div>
+          <div class="includes-item">
+            <span class="icon">🎟️</span> All Tickets
+          </div>
+          <div class="includes-item">
+            <span class="icon">🗣️</span> English Guide
+          </div>
+          <div class="includes-item">
+            <span class="icon">❄️</span> A/C Coach
+          </div>
+          <div class="includes-item">
+            <span class="icon">📍</span> Pickup &amp; Drop
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Tours -->
+      <section class="tours-section">
+        <div style="max-width: 1100px; margin: 0 auto">
+          <div style="text-align: center; margin-bottom: 60px">
+            <div class="section-tag">Our Tours</div>
+            <h2 class="section-title">Three Iconic Destinations</h2>
+          </div>
+          <div class="tours-grid">
+            <!-- Galle -->
+            <div class="tour-card">
+              <div class="tour-card-img">
+                <img
+                  src="images/galle_fort_2.jpeg"
+                  alt="Galle Fort aerial view"
+                  loading="lazy"
+                />
+                <div class="overlay"></div>
+                <div class="price-tag">$30</div>
+              </div>
+              <div class="tour-card-body">
+                <h3>Galle Day Tour</h3>
+                <div class="tour-card-tagline" style="color: #0e7c5f">
+                  Coastal Heritage &amp; River Safari
+                </div>
+                <div class="tour-card-highlights">
+                  <span style="background: #b8e8d6; color: #0e7c5f"
+                    >Madu Ganga River Safari</span
+                  >
+                  <span style="background: #b8e8d6; color: #0e7c5f"
+                    >Galle Fort UNESCO Site</span
+                  >
+                </div>
+                <div class="tour-card-btns">
+                  <button
+                    class="btn-detail"
+                    style="border-color: #0e7c5f; color: #0e7c5f"
+                    data-tour-detail="galle"
+                  >
+                    View Details
+                  </button>
+                  <button
+                    class="btn-book"
+                    style="background: #0e7c5f"
+                    data-tour-book="galle"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Kandy -->
+            <div class="tour-card">
+              <div class="tour-card-img">
+                <img
+                  src="images/dalada_maligawa.jpeg"
+                  alt="Dalada Maligawa, Kandy"
+                  loading="lazy"
+                />
+                <div class="overlay"></div>
+                <div class="price-tag">$30</div>
+              </div>
+              <div class="tour-card-body">
+                <h3>Kandy Day Tour</h3>
+                <div class="tour-card-tagline" style="color: #8b1e3f">
+                  Sacred City &amp; Hill Country
+                </div>
+                <div class="tour-card-highlights">
+                  <span style="background: #f2d0dc; color: #8b1e3f"
+                    >Temple of the Sacred Tooth Relic</span
+                  >
+                  <span style="background: #f2d0dc; color: #8b1e3f"
+                    >Kandy Lake &amp; City Tour</span
+                  >
+                </div>
+                <div class="tour-card-btns">
+                  <button
+                    class="btn-detail"
+                    style="border-color: #8b1e3f; color: #8b1e3f"
+                    data-tour-detail="kandy"
+                  >
+                    View Details
+                  </button>
+                  <button
+                    class="btn-book"
+                    style="background: #8b1e3f"
+                    data-tour-book="kandy"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sigiriya -->
+            <div class="tour-card">
+              <div class="tour-card-img">
+                <img
+                  src="images/Seegiriya_1.jpeg"
+                  alt="Sigiriya Rock Fortress"
+                  loading="lazy"
+                />
+                <div class="overlay"></div>
+                <div class="price-tag">$30</div>
+              </div>
+              <div class="tour-card-body">
+                <h3>Sigiriya &amp; Dambulla Tour</h3>
+                <div class="tour-card-tagline" style="color: #c46b1a">
+                  Ancient Wonders &amp; Cave Temples
+                </div>
+                <div class="tour-card-highlights">
+                  <span style="background: #faded0; color: #c46b1a"
+                    >Sigiriya Rock Fortress</span
+                  >
+                  <span style="background: #faded0; color: #c46b1a"
+                    >Dambulla Cave Temple</span
+                  >
+                </div>
+                <div class="tour-card-btns">
+                  <button
+                    class="btn-detail"
+                    style="border-color: #c46b1a; color: #c46b1a"
+                    data-tour-detail="sigiriya"
+                  >
+                    View Details
+                  </button>
+                  <button
+                    class="btn-book"
+                    style="background: #c46b1a"
+                    data-tour-book="sigiriya"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Coach Section -->
+      <section class="coach-section">
+        <div class="coach-inner">
+          <div class="coach-text">
+            <div class="section-tag">Travel in Comfort</div>
+            <h2>26-Seater A/C Luxury Coaches</h2>
+            <p>
+              Our fleet of modern, fully air-conditioned Toyota Coaster coaches
+              ensures a comfortable journey throughout your tour. With spacious
+              seating, large windows for sightseeing, and ample luggage space,
+              you can sit back, relax, and enjoy the beautiful Sri Lankan
+              scenery.
+            </p>
+          </div>
+          <div class="coach-img-wrap">
+            <img
+              src="images/coaster_bus.jpeg"
+              alt="Toyota Coaster 26-Seater AC Coach"
+              loading="lazy"
+            />
+            <div class="label">Toyota Coaster — Fully Air-Conditioned</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Photo Gallery -->
+      <section class="gallery-section">
+        <div style="max-width: 1100px; margin: 0 auto">
+          <div style="text-align: center; margin-bottom: 48px">
+            <div class="section-tag">Gallery</div>
+            <h2 class="section-title">Destinations You'll Explore</h2>
+          </div>
+          <div class="gallery-grid" id="gallery-grid">
+            <!-- Filled by JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact CTA -->
+      <section class="cta-section">
+        <h2>Ready for an Adventure?</h2>
+        <p>Contact us to book your seat today</p>
+        <div class="cta-btns">
+          <a href="tel:0716966245" class="btn-cta-gold" id="cta-book-btn"
+            >📞 Call 0716966245</a
+          >
+          <a
+            href="https://wa.me/94716966245"
+            target="_blank"
+            class="btn-cta-outline"
+            >💬 WhatsApp</a
+          >
+        </div>
+      </section>
+    </div>
+    <!-- /page-home -->
+
+    <!-- ==================== FAQ PAGE ==================== -->
+    <div id="page-faq" class="page hidden">
+      <div class="page-inner">
+        <div class="page-header">
+          <div class="section-tag">Help Centre</div>
+          <h1 class="section-title">Frequently Asked Questions</h1>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            <span>What is included in the tour price?</span
+            ><span class="toggle">+</span>
+          </button>
+          <div class="faq-a">
+            Every tour includes breakfast, lunch, all entrance tickets, a
+            professional English-speaking guide, and travel in a fully
+            air-conditioned 26-seater coach. There are no hidden costs.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            <span>Where is the pickup and drop-off point?</span
+            ><span class="toggle">+</span>
+          </button>
+          <div class="faq-a">
+            All tours depart from Pettah Railway Station, Colombo at 6:00 AM
+            sharp. You will be dropped back at the same location by
+            approximately 8:30 PM.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            <span>How do I book a tour?</span><span class="toggle">+</span>
+          </button>
+          <div class="faq-a">
+            We're currently accepting bookings via WhatsApp and phone. Simply
+            call or message us at 0716966245 to reserve your seat. Payment
+            details will be provided upon booking.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            <span>What should I bring on the tour?</span
+            ><span class="toggle">+</span>
+          </button>
+          <div class="faq-a">
+            We recommend comfortable walking shoes, sunscreen, a hat,
+            sunglasses, and a refillable water bottle. For Sigiriya, wear
+            clothes suitable for climbing steps. Modest attire is required for
+            temple visits (cover shoulders and knees).
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            <span>Can I join a tour as a solo traveller?</span
+            ><span class="toggle">+</span>
+          </button>
+          <div class="faq-a">
+            Absolutely! Our tours are perfect for solo travellers, couples,
+            families and small groups. You'll be joining a friendly group of
+            fellow travellers.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            <span>What is the cancellation policy?</span
+            ><span class="toggle">+</span>
+          </button>
+          <div class="faq-a">
+            Free cancellation up to 48 hours before the tour date. Cancellations
+            within 48 hours are subject to a 50% charge. No-shows are
+            non-refundable.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            <span
+              >Is the tour suitable for children and elderly travellers?</span
+            ><span class="toggle">+</span>
+          </button>
+          <div class="faq-a">
+            Our Galle and Kandy tours are suitable for all ages. The Sigiriya
+            tour involves climbing approximately 1,200 steps, so a reasonable
+            level of fitness is recommended. Please contact us if you have
+            specific concerns.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            <span>What languages do the guides speak?</span
+            ><span class="toggle">+</span>
+          </button>
+          <div class="faq-a">
+            Our guides are fluent in English and Sinhala. We can arrange
+            Tamil-speaking guides on request with prior notice.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            <span>What happens if it rains?</span><span class="toggle">+</span>
+          </button>
+          <div class="faq-a">
+            Tours operate rain or shine! Sri Lanka's tropical showers are
+            usually brief. We recommend bringing a light rain jacket. In case of
+            extreme weather, we'll contact you to reschedule.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q">
+            <span>Do you offer private or customized tours?</span
+            ><span class="toggle">+</span>
+          </button>
+          <div class="faq-a">
+            Yes! We can arrange private tours for groups. Contact us at
+            0716966245 for custom itineraries and group pricing.
+          </div>
+        </div>
+
+        <!-- Contact Box -->
+        <div class="contact-box">
+          <h3>Still have questions?</h3>
+          <p>We're here to help. Reach out anytime!</p>
+          <div class="contact-btns">
+            <a href="tel:0716966245" class="btn-green">📞 0716966245</a>
+            <a
+              href="https://wa.me/94716966245"
+              target="_blank"
+              class="btn-whatsapp"
+              >💬 WhatsApp</a
+            >
+            <a
+              href="mailto:sales@tentmaster.lk"
+              class="btn-green-outline"
+              >✉️ Email Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== BOOK NOW PAGE ==================== -->
+    <div id="page-book" class="page hidden">
+      <div class="page-inner wide">
+        <div class="page-header">
+          <div class="section-tag">Reserve Your Spot</div>
+          <h1 class="section-title">Book Your Day Tour</h1>
+        </div>
+
+        <!-- Tour Selection -->
+        <div class="book-tours-grid" id="book-tours-grid">
+          <!-- Filled by JS -->
+        </div>
+
+        <!-- Calendar -->
+        <div id="calendar-section" class="calendar-box hidden">
+          <h3 id="cal-heading">Select a Date</h3>
+          <p class="hint">
+            Green dates are available. Tours run on Wednesdays, Saturdays &amp;
+            Sundays.
+          </p>
+          <div class="calendars-wrap" id="calendars-wrap"></div>
+        </div>
+
+        <!-- Summary -->
+        <div id="summary-section" class="summary-box hidden">
+          <h3>Booking Summary</h3>
+          <div class="summary-grid">
+            <span class="summary-label">Tour</span>
+            <span class="summary-value" id="sum-tour"></span>
+            <span class="summary-label">Date</span>
+            <span class="summary-value" id="sum-date"></span>
+            <span class="summary-label">Price</span>
+            <span class="summary-value big" id="sum-price"></span>
+            <span class="summary-label">Pickup</span>
+            <span class="summary-value">Pettah Railway Station, 6:00 AM</span>
+          </div>
+          <div class="book-cta" id="sum-cta">
+            <h4>Call to Book Your Seat</h4>
+            <a href="tel:0716966245" class="phone-big">📞 0716966245</a>
+            <a
+              href="https://wa.me/94716966245"
+              target="_blank"
+              class="btn-whatsapp-big"
+              >💬 Book via WhatsApp</a
+            >
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="contact-section">
+          <h3>Contact Us</h3>
+          <p>Have questions? We'd love to hear from you.</p>
+          <div class="contact-info">
+            <div><strong>Phone:</strong> 0716966245</div>
+            <div>
+              <strong>WhatsApp:</strong>
+              <a href="https://wa.me/94716966245" target="_blank"
+                >+94 71 696 6245</a
+              >
+            </div>
+            <div><strong>Email:</strong> <a href="mailto:sales@tentmaster.lk"></a>sales@tentmaster.lk</a></div>
+            <div><strong>Location:</strong> Colombo, Sri Lanka</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <div style="display: flex; align-items: center; gap: 10px">
+            <svg width="32" height="32" viewBox="0 0 60 60" fill="none">
+              <circle cx="30" cy="30" r="28" fill="#0E7C5F" />
+              <path
+                d="M15 38 Q30 10 45 38"
+                stroke="#F9C846"
+                stroke-width="3"
+                fill="none"
+                stroke-linecap="round"
+              />
+              <path
+                d="M20 36 Q30 18 40 36"
+                stroke="#fff"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"
+              />
+              <circle cx="30" cy="22" r="3" fill="#F9C846" />
+            </svg>
+            <div>
+              <div
+                style="
+                  font-family: &quot;Playfair Display&quot;, serif;
+                  font-size: 15px;
+                  font-weight: 700;
+                  color: #fff;
+                "
+              >
+                Ceylon Excursion
+              </div>
+              <div
+                style="
+                  font-size: 9px;
+                  font-weight: 500;
+                  color: rgba(255, 255, 255, 0.5);
+                  letter-spacing: 0.15em;
+                  text-transform: uppercase;
+                "
+              >
+                Tours
+              </div>
+            </div>
+          </div>
+          <p>
+            Discover Sri Lanka's most iconic destinations with our fully guided
+            day tours from Colombo.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Our Tours</h4>
+          <div>Galle Day Tour</div>
+          <div>Kandy Day Tour</div>
+          <div>Sigiriya &amp; Dambulla Tour</div>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div>📞 0716966245</div>
+          <div>💬 WhatsApp: +94 71 696 6245</div>
+          <div>✉️ info@ceylonexcursiontours.com</div>
+          <div>📍 Colombo, Sri Lanka</div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 Ceylon Excursion Tours. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- ==================== TOUR DETAIL MODAL ==================== -->
+    <div class="modal-overlay" id="modal-overlay">
+      <div class="modal" id="tour-modal">
+        <div class="modal-header">
+          <img id="modal-img" src="" alt="" />
+          <div class="modal-grad" id="modal-grad"></div>
+          <button class="modal-close" id="modal-close">✕</button>
+          <div class="modal-header-text">
+            <h2 id="modal-title"></h2>
+            <p id="modal-subtitle"></p>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="modal-section-title" id="modal-section-itin">
+            Itinerary
+          </div>
+          <div class="itinerary" id="modal-itinerary">
+            <div class="line"></div>
+          </div>
+          <div class="modal-section-title" id="modal-section-places">
+            Places You'll Visit
+          </div>
+          <div class="places-tags" id="modal-places"></div>
+          <div class="included-box">
+            <div class="included-title">What's Included</div>
+            <div class="included-grid">
+              <div><span class="check">✓</span> Breakfast &amp; Lunch</div>
+              <div><span class="check">✓</span> All entrance tickets</div>
+              <div><span class="check">✓</span> English-speaking guide</div>
+              <div><span class="check">✓</span> A/C coach transport</div>
+              <div><span class="check">✓</span> Pickup &amp; drop-off</div>
+              <div><span class="check">✓</span> Bottled water</div>
+            </div>
+          </div>
+          <button class="modal-book-btn" id="modal-book-btn">
+            Book This Tour
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== LIGHTBOX ==================== -->
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="lb-close">✕</button>
+      <button class="lightbox-nav lightbox-prev" id="lb-prev">‹</button>
+      <img id="lb-img" src="" alt="Gallery image" />
+      <button class="lightbox-nav lightbox-next" id="lb-next">›</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
